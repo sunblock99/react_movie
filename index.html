@@ -20,9 +20,8 @@
     function App() {
         const [counter, setCouner] = React.useState(0);
         const onClick = () => {
-            setCouner(counter + 1);
-            console.log("rendered");
-            console.log(counter);
+            // setCouner(counter  + 1);
+            setCouner((current) => current + 1);
 
         };
         return (
